@@ -5,8 +5,8 @@
 
 DHTesp dht;
 
-const char* ssid = "Xiaomi_1DAD";
-const char* password = "riquelme0000";
+const char* ssid = "NOME DA SUA REDE";
+const char* password = "SENHA DA SUA REDE";
 
 WebServer server(80);
 
