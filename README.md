@@ -119,7 +119,7 @@ Este projeto foi desenvolvido na Universidade Federal de Alagoas, na matéria: O
 1. Riquelme Magalhães de Souza;
 2. João Carlos Araujo dos Anjos Silva;
 3. Isaac Kawan da Silva Souza;
-4. Vinicius
+4. José Vinicius Cavalcante Soares
 ---
 
 Esperamos que este projeto seja útil para aprender e aplicar conceitos práticos relacionados a IoT e monitoramento de sensores. Sinta-se à vontade para explorar, modificar e compartilhar este código para fins educacionais.
