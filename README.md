@@ -102,16 +102,6 @@ Espero que essas instruções detalhadas facilitem a configuração e execução
 
 
 
-## Observações 📢:
-O código Python realiza uma requisição a cada 2 segundos para obter os dados da ESP32.
-
-O caminho C:\esp32_monitor no terminal retorna o endereço http://127.0.0.1:5000.
-
-O endpoint /data em http://127.0.0.1:5000/data fornece os dados em formato JSON.
-
-A parte do QT é opcional e pode ser explorada conforme a preferência do usuário.
-
-Espero que essas instruções detalhadas facilitem a configuração e execução do seu projeto! Se houver mais detalhes ou ajustes necessários, estou à disposição. 🚀
 
 ## Contexto Acadêmico 🎓
 Este projeto foi desenvolvido na Universidade Federal de Alagoas, na matéria: Organização e Arquitetura de Computadores. Os professores responsáveis por ministrar o curso foram a Professora Raquel Cabral e o Professor Tácito Neves.
