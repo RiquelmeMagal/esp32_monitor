@@ -16,7 +16,7 @@ def index():
 def get_data():
     try:
         # Substitua pelo IP correto do seu ESP32
-        resposta = requests.get('http://192.168.31.209/') 
+        resposta = requests.get('SEU IP AQUI') #ALTERE PELO IP GERADO NA ARDUINO IDE 
         if resposta.status_code == 200:
             dados = resposta.text
             dados_separados = dados.split("e")
@@ -39,7 +39,7 @@ def atualiza_dados():
 def atualizaDados():
     try:
         # Substitua pelo IP correto do seu ESP32
-        resposta = requests.get('http://192.168.31.209/')
+        resposta = requests.get('SEU IP AQUI') #ALTERE PELO IP GERADO NA ARDUINO IDE 
         if resposta.status_code == 200:
             dados = resposta.text
             dados_separados = dados.split("e")
