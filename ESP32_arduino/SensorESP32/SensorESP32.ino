@@ -5,8 +5,8 @@
 
 DHTesp dht;
 
-const char* ssid = "NOME DA SUA REDE";
-const char* password = "SENHA DA SUA REDE";
+const char* ssid = "NOME DA SUA REDE"; // Altere para o nome da sua rede.
+const char* password = "SENHA DA SUA REDE"; // Altere para a senha da sua rede.
 
 WebServer server(80);
 
