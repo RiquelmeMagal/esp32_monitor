@@ -1,18 +1,30 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #d4e4f0;
-    /* Cor de fundo suave */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #384c5c; /* Cor de fundo suave */
+    overflow: hidden; /* Esconde o overflow do vídeo */
+    position: relative;
+}
+
+/* Estilos para o vídeo de fundo */
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra toda a área do body */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
 .container {
-    background: linear-gradient(to bottom, #c182da, #ad6bc7, #86499e);
-    border-radius: 10px;
+    background: rgba(56, 76, 92, 0.5);
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 400px;
@@ -21,13 +33,17 @@ body {
 
 h1 {
     text-align: center;
-    color: #11476b;
-    /* Cor azul para o título */
+    color: #f7f7f7; /* Cor azul para o título */
+}
+
+h3 {
+    text-align: center;
+    color: #f7f7f7; 
+    font-size: 10px;
 }
 
 .header {
-    background-color: #3498db;
-    /* Cor de fundo azul */
+    background-color: #3498db; /* Cor de fundo azul */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -43,56 +59,18 @@ h1 {
 .data p {
     font-size: 18px;
     margin-bottom: 10px;
+    color: white;
+    text-align: justify;
 }
 
 #temperature {
     font-size: 28px;
     font-weight: bold;
-    color: #e74c3c;
-    /* Cor vermelha para a temperatura */
+    color: #e74c3c; /* Cor vermelha para a temperatura */
 }
 
 #humidity {
     font-size: 20px;
     font-weight: bold;
-    color: #3498db;
-    /* Cor azul para a umidade */
-}
-
-.chart-container {
-    margin-top: 20px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 0 0 10px 10px;
-    /* Borda arredondada apenas na parte inferior */
-    overflow: hidden;
-}
-
-/* Estilos para o gráfico - você pode ajustar esses estilos conforme necessário */
-.chart-container canvas {
-    background: linear-gradient(to bottom, #ad6bc7, #9b59b6, #461d57);
-    max-width: 100%;
-    height: 100%;
-    display: block;
-    border: none;
-}
-
-/* Estilo para o botão de atualização */
-.update-button {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    background-color: #3498db;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-    transition: background-color 0.3s ease;
-}
-
-.update-button:hover {
-    background-color: #2980b9;
-    /* Cor mais escura ao passar o mouse */
+    color: #3498db; /* Cor azul para a umidade */
 }

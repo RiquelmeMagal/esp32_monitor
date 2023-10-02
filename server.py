@@ -20,8 +20,8 @@ def get_data():
         if resposta.status_code == 200:
             dados = resposta.text
             dados_separados = dados.split("e")
-            umidade = dados_separados[0][0:4] + "%"
-            temperatura = dados_separados[1][0:4] + " °C"
+            umidade = dados_separados[0][0:4]
+            temperatura = dados_separados[1][0:4] 
 
             return jsonify({'umidade': umidade, 'temperatura': temperatura})
         else:
