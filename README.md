@@ -18,14 +18,19 @@ O objetivo deste projeto é utilizar uma ESP32 em conjunto com o sensor DHT11 pa
  
 ---
 -  Certifique-se que o DHT esteja da mesma forma da imagem.
+![Imagem do Projeto](imagens/imagem1.jpeg)
+![Imagem do Projeto 1](imagens/imagem2.jpeg)
+![Imagem do Projeto 5](imagens/imagem3.jpeg)
+![Imagem do Projeto 1](imagens/imagem4.jpeg)
+![Imagem do Projeto 5](imagens/imagem5.jpeg)
 --- 
 *  1o jumper ao lado do 3V3 da ESP32 vai na primeira perninha do DHT11. 
 *  2o jumper ao lado do GND da ESP32 vai na segunda perninha do DHT. 
 * 3o jumper no meu caso estou utilizando a porta D4 da ESP32, se você for utilizar também a D4 coloque um jumper ao lado do D4 na ESP32 pule 1 perninha no DHT11 e conecte-o na ultima perninha do DHT1.
 
 ## 1. Configurando a ESP32 + DHT11 🧩:
-Conecte um cabo micro USB na ESP32 e a porta USB do gabinete nas portas traseiras. Instalne algumas bibliotecas que forem recomendadas (se caso der erro por falta de bibliotecas instale as que faltam).
-Compile e envie o código para a ESP32 na IDE do Arduino. No Serial Monitor, observe a mensagem:
+Conecte um cabo micro USB na ESP32 e a porta USB do gabinete nas portas traseiras. Instale algumas bibliotecas que forem recomendadas (se caso der erro por falta de bibliotecas instale as que faltam).
+Compile o código na IDE do Arduino. No Serial Monitor aparecerá algo como:
 ```css
 Copy code
 Connected to Xiaomi_1DAD
