@@ -33,8 +33,8 @@ Conecte um cabo micro USB na ESP32 e a porta USB do gabinete nas portas traseira
 Compile o código na IDE do Arduino. No Serial Monitor aparecerá algo como:
 ```css
 Copy code
-Connected to Xiaomi_1DAD
-IP address: 192.168.31.209 
+Connected to "Nome_Da_Sua_Rede"
+IP address: "Ip_Da_Sua_Rede"
 MDNS responder started
 HTTP server started
 ```
@@ -66,9 +66,9 @@ Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
  ```
-Após isso entre nesse link: "http://127.0.0.1:5000". Você verá o site configurado com HTML e CSS. Caso queira ver os dados em formato json digite:
+Após isso entre no link gerado anteriormente. Você verá o site configurado com HTML e CSS. Caso queira ver os dados em formato json digite:
 ```python:
-http://127.0.0.1:5000/data
+http://"HTTP_Gerado_Anteriormente"/data
 ```
 Certifique-se de ter as bibliotecas necessárias instaladas no ambiente Python.
 
@@ -89,7 +89,7 @@ Espero que essas instruções detalhadas facilitem a configuração e execução
 ## Estrutura do Projeto 🏗️
 
 - **ESP32:**
-  - O ESP32 é configurado como um servidor web e fornece os dados do sensor através do endpoint `http://192.168.31.209/`.
+  - O ESP32 é configurado como um servidor web e fornece os dados do sensor através do endpoint , no meu caso foi: `http://192.168.31.209/`.
 
 - **Código Python:**
   - O código Python utiliza a biblioteca PyQt5 para criar uma interface gráfica simples.
@@ -97,8 +97,8 @@ Espero que essas instruções detalhadas facilitem a configuração e execução
   - A interface é atualizada automaticamente a cada 2 segundos com os valores mais recentes de temperatura e umidade.
 
 - **Flask Web Server:**
-  - O ESP32 envia os dados do sensor para um servidor Flask que está escutando em `http://127.0.0.1:5000/data`.
-  - O servidor Flask também disponibiliza uma página web para visualização dos dados em `http://127.0.0.1:5000`.
+  - O ESP32 envia os dados do sensor para um servidor Flask que está executando na minha máquina neste endereço de IP. `http://127.0.0.1:5000/data`.
+  - O servidor Flask também disponibiliza uma página web para visualização dos dados, na minha máquina foram no endereço: `http://127.0.0.1:5000`.
 
 
 
@@ -109,7 +109,7 @@ Este projeto foi desenvolvido na Universidade Federal de Alagoas, na matéria: O
 1. Riquelme Magalhães de Souza;
 2. João Carlos Araujo dos Anjos Silva;
 3. Isaac Kawan da Silva Souza;
-4. José Vinicius Cavalcante Soares
+4. José Vinicius Cavalcante Soares.
 ---
 
 Esperamos que este projeto seja útil para aprender e aplicar conceitos práticos relacionados a IoT e monitoramento de sensores. Sinta-se à vontade para explorar, modificar e compartilhar este código para fins educacionais.
